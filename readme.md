@@ -10,6 +10,8 @@ Electron based menu bar app to setup reminders. Supports most date and time form
 
 ![Remind.App](preview.png "Remind.App")
 
+[Download](https://github.com/sksmatt/remind.app/releases)
+
 ## Build instructions (OSX)
 
 - run `npm install`
