@@ -1,0 +1,181 @@
+* { margin:0; padding:0; }
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color:#363f47;
+  background: #f6f6f6;
+  font-size: 14px;
+  font-family: "Helvetica Neue";
+  font-smoothing:antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+  padding:56px 40px 20px;
+}
+
+ul#tabs {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  background: #F1F1F1;
+  font-size: 12px;
+  height: 35px;
+}
+
+ul#tabs li.tab--history {
+  background: #f6f6f6;
+  border-bottom-color: #f6f6f6;
+}
+
+ul#tabs:after {
+  content:'';
+  position: absolute;
+  border-left:1px solid #ddd;
+  left:50%;
+  top:0;
+  bottom:0;
+  display: block;
+}
+
+ul#tabs li {
+  width: 50%;
+  float: left;
+  list-style: none;
+  border-bottom:1px solid #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+ul#tabs li a {
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  height: 100%;
+  color: #999;
+}
+
+ul#tabs li.tab--current a {
+  color:#363f47;
+}
+
+#alarm__audio {
+  display: none;
+}
+
+/*
+|--------------------------------------------------------------------------
+| FORM
+|--------------------------------------------------------------------------
+*/
+
+label {
+  display: block;
+  width: 100%;
+}
+
+#due__time, textarea {
+  width: 100%;
+  padding:5px 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  margin:5px 0 15px;
+  display: block;
+  clear:both;
+  padding:5px 10px;
+}
+
+
+#due__time {
+  border:1px solid #ddd;
+  resize: none;
+  font-size: 14px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| ALARMS
+|--------------------------------------------------------------------------
+*/
+
+li.alarm__entry {
+  width: 100%;
+  padding: 5px 0;
+  list-style: none;
+  border-bottom:1px solid #ddd;
+  overflow: hidden;
+}
+
+li.alarm__entry div.alarm__details {
+  float:left;
+  width: 60%;
+
+}
+
+.alarm__time {
+  font-size: 12px;
+  opacity:0.6;
+}
+
+.alarm__details__desc {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+
+li.alarm__entry div.alarm__details__date { 
+  font-weight: normal;
+  font-size: 12px;
+  opacity:0.6;
+}
+
+li.alarm__entry a {
+  float:right;
+  color:red;
+  font-size: 11px;
+  text-align:right;
+  text-decoration: none;
+  padding: 3px 5px;
+  margin-top:7px;
+}
+
+li.alarm__entry a:hover {
+  background: red;
+  color:white;
+  padding: 3px 5px;
+}
+
+li.alarm--current div{
+  font-weight:bold;
+}
+
+/*
+|--------------------------------------------------------------------------
+| PANELS
+|--------------------------------------------------------------------------
+*/
+
+#panel__alarms {
+  display: none;
+}
+
+#panel__hystory {
+  display: none;
+}
+
+#panel__hystory.panel--current,
+#panel__alarms.panel--current {
+  display: block;
+}
