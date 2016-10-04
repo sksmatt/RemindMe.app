@@ -18,7 +18,7 @@ body {
 }
 
 .wrapper {
-  padding:56px 40px 20px;
+  padding: 56px 20px 20px;
 }
 
 ul#tabs {
@@ -119,8 +119,7 @@ li.alarm__entry {
 
 li.alarm__entry div.alarm__details {
   float:left;
-  width: 60%;
-
+  width: 80%;
 }
 
 .alarm__time {
@@ -143,18 +142,17 @@ li.alarm__entry div.alarm__details__date {
 
 li.alarm__entry a {
   float:right;
-  color:red;
-  font-size: 11px;
-  text-align:right;
-  text-decoration: none;
-  padding: 3px 5px;
+  background: url('trashcan.png') no-repeat;
+  background-size: 12px 16px;
+  opacity:0.3;
+  text-indent: 100%;
+  width: 12px;
+  height: 16px;
   margin-top:7px;
 }
 
 li.alarm__entry a:hover {
-  background: red;
-  color:white;
-  padding: 3px 5px;
+  opacity: 1;
 }
 
 li.alarm--current div{

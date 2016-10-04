@@ -8,5 +8,5 @@ mb.setOption('heigth', 320);
 mb.setOption('minWidth', 320);
 mb.setOption('minHeight', 320);
 mb.setOption('maxWidth', 320);
-mb.setOption('maxHeight', 320);
+mb.setOption('maxHeight', 335);
 mb.setOption('resizeable', false);
